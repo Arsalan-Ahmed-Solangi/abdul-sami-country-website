@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Footer } from "../../Ul/Footer";
 import { Header } from "../../Ul/Header";
 
-const AppLayout = () => {
+const MainLayout = () => {
   return (
     <>
       <Header />
@@ -13,4 +13,4 @@ const AppLayout = () => {
   //
 };
 
-export default AppLayout;
+export default MainLayout;
