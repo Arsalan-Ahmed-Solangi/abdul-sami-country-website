@@ -3,7 +3,7 @@ import { NavLink, useParams } from "react-router-dom";
 import { getCountryIndviDetails } from "../../api/postApi";
 import { Loader } from "../../Ul/Loader";
 
-export const CountryDetails = () => {
+const CountryDetails = () => {
   const params = useParams();
   const [isPending, startTransition] = useTransition();
   const [country, setCountry] = useState(null); // changed from [] to null
@@ -60,3 +60,5 @@ export const CountryDetails = () => {
     </section>
   );
 };
+
+export default CountryDetails;
